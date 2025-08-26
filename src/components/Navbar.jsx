@@ -1,7 +1,8 @@
 export default function Navbar() {
   return (
-    <div style={{ background: "#222", color: "#fff", padding: "10px" }}>
-      <h3>My Dashboard</h3>
-    </div>
+    <header className="header" id="header">
+        <div className="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div className="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""/> </div>
+    </header>
   );
 }
