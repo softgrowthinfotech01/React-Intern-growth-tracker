@@ -18,15 +18,15 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
-import { useState } from "react";
-import Login from './components/auth/SignInForm';
+// import { useState } from "react";
+// import Login from './components/auth/SignInForm';
 
 export default function App() {
-  const [isAuthenticated, setAuthenticated] = useState(false);
+  // const [isAuthenticated, setAuthenticated] = useState(false);
 
   return (
     <>
-     {isAuthenticated ? (
+     {/* {isAuthenticated ? ( */}
 
       <Router>
         <ScrollToTop />
@@ -67,9 +67,9 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
-      ) : (
-        <Login onLogin={setAuthenticated} />
-      )}
+      {/* // ) : (
+      //   <Login onLogin={setAuthenticated} />
+      // )} */}
 
     </>
   );
